@@ -8,14 +8,25 @@
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
+  <link rel="stylesheet" type="text/css" href="../css/loader.css" />
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css" />
-  <link rel="stylesheet" type="text/css" href="../css/styles.css" />
   <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
   <link rel="stylesheet/less" type="text/css" href="../css/website-styles.less" />
 </head>
 
 <body>
+
+  <!-- ****** Loader ******** -->
+  <div class="c-loaderDiv" id="loading">
+    <div class="loader">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        <div class="companyTitle">CleverGround</div>
+    </div>
+  </div>
+  <!-- ****** Loader End ******** -->
+
+
   <!-- *************** Main Wrapper *************** -->
   <div class="c-mainContainer">
     <!-- ****** Sidebar ******** -->
@@ -745,6 +756,11 @@
   <script src="../js/less.min.js"></script>
   <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="../js/main.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('loading').style.display = 'none';
+    });
+  </script>
 </body>
 
 </html>

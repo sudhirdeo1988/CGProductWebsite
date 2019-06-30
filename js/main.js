@@ -6,9 +6,9 @@
 /* --------------------------------------------------------
  JQUERY FUNCTION CALL
 ----------------------------------------------------------- */
+
 (function($) {
   "use strict";
-
   // -------- Sidebar
   $("body").delegate(".headerMobile_menuHamb button", "click", function() {
     var thisCheck = $(this).parents(".c-mainContainer");
