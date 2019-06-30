@@ -758,7 +758,13 @@
   <script type="text/javascript" src="../js/main.js"></script>
   <script>
     window.addEventListener('load', () => {
-      document.getElementById('loading').style.display = 'none';
+      var loaderDiv = document.getElementById('loading');
+      setTimeout(function(){
+        loaderDiv.style.opacity = '0';
+          setTimeout(function(){
+            loaderDiv.style.display = 'none';
+          },500);
+      },1500);
     });
   </script>
 </body>
